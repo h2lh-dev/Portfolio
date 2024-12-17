@@ -1,3 +1,7 @@
+<script>
+
+</script>
+
 <body>
 <section class="competences-section">
     <div class="competences-container">
