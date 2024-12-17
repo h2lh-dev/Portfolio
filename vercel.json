@@ -1,14 +1,14 @@
 {
   "builds": [
     {
-      "src": "src/routes/**/*",
-      "use": "@vercel/static-build"
+      "src": "package.json",
+      "use": "@vercel/node"
     }
   ],
   "routes": [
     {
-      "src": "/(.*)",
-      "dest": "/$1"
+      "src": "/.*",
+      "dest": "/"
     }
   ]
 }
