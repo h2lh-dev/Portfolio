@@ -1,9 +1,11 @@
 <footer>
-    <p>© 2024 DESMONS Hugo. Tous droits réservés.</p>
+    <p>© 2024 DESMONS Hugo. Tous droits réservés.
+    <br> Contact : hugo.desmons@icloud.com
+    </p>
     <div class="social-icons">
-        <a href="https://twitter.com" target="_blank">Twitter</a>
+        <a href="./Projet/CVHugoDesmons.pdf" download> CV </a>
         <a href="https://github.com/h2lh-dev" target="_blank">GitHub</a>
-        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/hugo-desmons-a65b31313?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">LinkedIn</a>
     </div>
 </footer>
 
