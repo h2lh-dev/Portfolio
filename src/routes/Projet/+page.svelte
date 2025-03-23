@@ -4,7 +4,6 @@
 
 
 
-<body>
 <div class="portfolio">
     <div class="project">
         <img src="./Projet/ChatMoiFort.png" alt="Projet 2">
@@ -96,7 +95,7 @@
 
     <!-- Ajoute d'autres projets ici -->
 </div>
-</body>
+
 
 <style>
     /* Réinitialisation des marges et du padding */

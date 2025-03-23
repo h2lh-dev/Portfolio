@@ -2,8 +2,7 @@
 
 </script>
 
-<body>
-<main>
+
     <section class="presentation-section">
         <h2 class="section-title">Présentation</h2>
         <section id="presentation">
@@ -18,8 +17,7 @@
             </p>
         </section>
     </section>
-</main>
-</body>
+
 
 
 <style>/* Global Styling */

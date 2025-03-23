@@ -2,7 +2,7 @@
 
 </script>
 
-<body>
+
 <section class="competences-section">
     <div class="competences-container">
         <h1>Mes Compétences</h1>
@@ -125,7 +125,7 @@
         </div>
     </div>
 </section>
-</body>
+
 
 
 <style>
