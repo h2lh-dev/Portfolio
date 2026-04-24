@@ -102,7 +102,7 @@
     }
 
     .nav-menu li a::after {
-        content: '';
+        content: "";
         position: absolute;
         bottom: -5px;
         left: 0;

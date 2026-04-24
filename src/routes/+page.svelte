@@ -1,10 +1,10 @@
 <script>
-    import { onMount } from ‘svelte’;
+    import { onMount } from "svelte";
 
     let scrollY = 0;
 
     onMount(() => {
-        window.addEventListener(‘scroll’, () => {
+        window.addEventListener("scroll", () => {
             scrollY = window.scrollY;
         });
     });
@@ -17,7 +17,7 @@
         <div class="hero-text">
             <h1 class="hero-title">Hugo Desmons</h1>
             <p class="hero-subtitle">Développeur Full Stack</p>
-            <p class="hero-description">Étudiant en BUT Informatique à l’IUT de Villeneuve d’Ascq, passionné par les technologies numériques et l’innovation</p>
+            <p class="hero-description">Étudiant en BUT Informatique à l'IUT de Villeneuve d'Ascq, passionné par les technologies numériques et l'innovation</p>
             <div class="hero-cta">
                 <a href="/Projet" class="btn btn-primary">Voir mes projets</a>
                 <a href="./Projet/CVHugoDesmons.pdf" download class="btn btn-secondary">Télécharger CV</a>
@@ -38,12 +38,12 @@
             <div class="presentation-card">
                 <div class="card-icon">📚</div>
                 <h3>Formation</h3>
-                <p>Actuellement en 2ème année de BUT Informatique à l’IUT de Villeneuve d’Ascq. Passionné par les technologies numériques et le développement logiciel.</p>
+                <p>Actuellement en 2ème année de BUT Informatique à l'IUT de Villeneuve d'Ascq. Passionné par les technologies numériques et le développement logiciel.</p>
             </div>
             <div class="presentation-card">
                 <div class="card-icon">💡</div>
                 <h3>Vision</h3>
-                <p>Convaincu que les intelligences artificielles et les innovations constantes offrent des perspectives d’avenir passionnantes et stimulantes.</p>
+                <p>Convaincu que les intelligences artificielles et les innovations constantes offrent des perspectives d'avenir passionnantes et stimulantes.</p>
             </div>
             <div class="presentation-card">
                 <div class="card-icon">🚀</div>
