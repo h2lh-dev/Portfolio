@@ -1,164 +1,280 @@
 <script>
-
+    const projects = [
+        {
+            title: "ChatMoiFort",
+            description: "Application de messagerie en ligne développée avec TomCat. Plateforme complète de communication en temps réel avec gestion des utilisateurs.",
+            image: "./Projet/ChatMoiFort.png",
+            tags: ["Java", "Bootstrap", "CSS", "HTML", "PostgreSQL"],
+            link: "https://gitlab.univ-lille.fr/matias.mennecart.etu/sae-r4.01",
+            skills: "Java, Bootstrap, CSS, HTML, PostgreSQL"
+        },
+        {
+            title: "Logiciel de Classification",
+            description: "Application de classification permettant de charger un jeu de données et le classifier en utilisant l'algorithme k-NN pour l'apprentissage automatique.",
+            image: "./Projet/Classification.png",
+            tags: ["Java", "Git", "Figma"],
+            link: "https://gitlab.univ-lille.fr/sae302/2024/H4_SAE3.3",
+            skills: "Java, Git, Figma"
+        },
+        {
+            title: "RentApple",
+            description: "Site web fictif d'une plateforme de covoiturage. Solution numérique répondant aux besoins modernes de mobilité partagée.",
+            image: "./Projet/rentApple.png",
+            tags: ["HTML", "CSS"],
+            link: "https://github.com/h2lh-dev/RentApple",
+            skills: "HTML, CSS"
+        },
+        {
+            title: "Nuit de l'Info",
+            description: "Participation au concours national qui rassemble les étudiants en informatique pour créer une solution numérique innovante.",
+            image: "./Projet/nuitInfo.png",
+            tags: ["HTML", "CSS", "JavaScript", "Svelte", "Git"],
+            link: "https://github.com/h2lh-dev/HDFC",
+            website: "hdfc-beige.vercel.app",
+            skills: "HTML, CSS, JavaScript, Svelte, Git"
+        },
+        {
+            title: "PirAttack",
+            description: "Jeu simple développé en 5 jours avec la méthodologie Agile. Projet de rentrée mettant en avant le travail en équipe et la gestion de projet.",
+            image: "./Projet/pirAttack.png",
+            tags: ["Java", "Git"],
+            link: "https://gitlab.univ-lille.fr/2024-projet-agile-de-rentree/groupe-7",
+            skills: "Java, Git"
+        },
+        {
+            title: "SAM - Routeur d'itinéraires",
+            description: "Application permettant de choisir le meilleur itinéraire selon les critères (temps, prix, écologie). Utilise l'algorithme de Dijkstra.",
+            image: "./Projet/SAM.png",
+            tags: ["Java", "Git"],
+            link: "https://gitlab.univ-lille.fr/sae2.01-2.02/2024/B1",
+            skills: "Java, Git"
+        },
+        {
+            title: "Java Daiquiri Dash",
+            description: "Jeu éducatif créé sur Genially présentant les bases du fonctionnement de Java de manière interactive et ludique.",
+            image: "./Projet/javaDaiquiriDash.png",
+            tags: ["Genially", "Éducatif"],
+            skills: "Genially"
+        },
+        {
+            title: "Base de données Parcoursup",
+            description: "Ventilation d'un jeu de données Parcoursup sur PostgreSQL. Réalisation de requêtes SQL avancées pour des analyses statistiques.",
+            image: "./Projet/parcoursup.png",
+            tags: ["PostgreSQL", "SQL"],
+            skills: "PostgreSQL, SQL"
+        },
+        {
+            title: "Création Machine Virtuelle",
+            description: "Création et configuration d'une machine virtuelle avec Debian 12. Installation et optimisation de l'OS pour une utilisation agréable.",
+            image: "./Projet/virtualbox-main.png",
+            tags: ["Linux", "VirtualBox", "Debian"],
+            skills: "Linux, VirtualBox, Debian"
+        }
+    ];
 </script>
 
-
-
-<div class="portfolio">
-    <div class="project">
-        <img src="./Projet/ChatMoiFort.png" alt="Projet 2">
-        <div class="project-info">
-            <h2>ChatMoiFort</h2>
-            <p>Dans le cadre de ce projet, nous avons dû réaliser une application de messagerie en ligne. En utilisant TomCat.</p>
-            <a href="https://gitlab.univ-lille.fr/matias.mennecart.etu/sae-r4.01"> Git </a>
-            <img src="https://skillicons.dev/icons?i=java,bootstrap,css,html,postgresql&theme=dark&perline=15" alt="My Skills" />
-        </div>
-    </div>
-    <div class="project">
-        <img src="./Projet/Classification.png" alt="Projet 2">
-        <div class="project-info">
-            <h2>Logiciel de Classifcation</h2>
-            <p>Dans le cadre de ce projet, nous avons dû réaliser une application de classification permettant de charger un jeu de données et de le classifier en utilisant l'algorithme k-NN.</p>
-            <a href="https://gitlab.univ-lille.fr/sae302/2024/H4_SAE3.3"> Git </a>
-            <img src="https://skillicons.dev/icons?i=java,git,figma&theme=dark&perline=15" alt="My Skills" />
-        </div>
-    </div>
-    <div class="project">
-        <img src="./Projet/rentApple.png" alt="Projet 2">
-        <div class="project-info">
-            <h2>RentApple</h2>
-            <p>Dans le cadre de ce projet, nous avons dû réaliser le site web fictif d'une entreprise en répondant à un besoin de création d'une plateforme de covoiturage.</p>
-            <a href="https://github.com/h2lh-dev/RentApple"> Git </a>
-           <img src="https://skillicons.dev/icons?i=html,css&theme=dark&perline=15" alt="My Skills" />
-        </div>
-    </div>
-    <div class="project">
-        <img src="./Projet/nuitInfo.png" alt="Projet 2">
-        <div class="project-info">
-            <h2>Nuit de l'info</h2>
-            <p>La Nuit de l'Info est un concours national qui rassemble les étudiants en informatique pour la création en équipe d'un site web proposant une solution numérique à des problématiques réelles.</p>
-            <a href="https://github.com/h2lh-dev/HDFC"> Git </a>
-            <a href="hdfc-beige.vercel.app"> Lien </a>
-            <img src="https://skillicons.dev/icons?i=html,css,javascript,svelte,git&theme=dark&perline=15" alt="My Skills" />
-        </div>
-    </div>
-    <div class="project">
-        <img src="./Projet/pirAttack.png" alt="Projet 2">
-        <div class="project-info">
-            <h2>PirAttack</h2>
-            <p>Nous avons dû réaliser un projet en 5 jours portant sur la création d'un jeu simple en Java, en utilisant la méthodologie Agile.</p>
-            <a href="https://gitlab.univ-lille.fr/2024-projet-agile-de-rentree/groupe-7"> Git </a>
-            <img src="https://skillicons.dev/icons?i=java,git&theme=dark&perline=15" alt="My Skills" />
-        </div>
-    </div>
-    <div class="project">
-        <img src="./Projet/SAM.png" alt="Projet 2">
-        <div class="project-info">
-            <h2>Sam</h2>
-            <p>Nous avons dû créer une application permettant de choisir le meilleur itinéraire en répondant aux critères de la personne (temps, prix et écologie). Nous avons utilisé l'algorithme de Dijkstra.</p>
-            <a href="https://gitlab.univ-lille.fr/sae2.01-2.02/2024/B1"> Git </a>
-            <img src="https://skillicons.dev/icons?i=java,git&theme=dark&perline=15" alt="My Skills" />
-        </div>
-    </div>
-    <div class="project">
-        <img src="./Projet/javaDaiquiriDash.png" alt="Projet 2">
-        <div class="project-info">
-            <h2>Java Daiquiri Dash</h2>
-            <p>Nous avons dû créer un jeu sur le site Genially, qui devait être éducatif, sur le thème de Java, en présentant les bases de son fonctionnement.</p>
-
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Genially_%282023%29_logotipo.png/640px-Genially_%282023%29_logotipo.png" alt="My Skills" />
-
-        </div>
-    </div>
-    <div class="project">
-        <img src="./Projet/parcoursup.png" alt="Projet 2">
-        <div class="project-info">
-            <h2>Base de donnée Parcoursup</h2>
-            <p>Nous avons dû ventiler un jeu de données représentant les résultats de Parcoursup sur PostgreSQL et répondre à des questions statistiques à l'aide de requêtes SQL.</p>
-
-
-            <img src="https://skillicons.dev/icons?i=postgresql&theme=light&perline=15" alt="My Skills" />
-
-        </div>
+<section class="projects-section">
+    <div class="projects-header">
+        <h1>Mes Projets</h1>
+        <p>Découvrez les différents projets que j'ai réalisés durant ma formation et mes initiatives personnelles</p>
     </div>
 
-    <div class="project">
-        <img src="./Projet/virtualbox-main.png" alt="Projet 2">
-        <div class="project-info">
-            <h2>Creation Machine Virtuel</h2>
-            <p>Nous avons dû créer une machine virtuelle, installer l'OS Debian 12, puis le configurer pour une utilisation agréable.</p>
-
-            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Virtualbox_logo.png" alt="My Skills" />
-
-        </div>
+    <div class="projects-grid">
+        {#each projects as project (project.title)}
+            <div class="project-card">
+                <div class="project-image">
+                    <img src={project.image} alt={project.title} />
+                    <div class="project-overlay">
+                        {#if project.link}
+                            <a href={project.link} target="_blank" class="project-link">Voir le code</a>
+                        {/if}
+                        {#if project.website}
+                            <a href={`https://${project.website}`} target="_blank" class="project-link">Visiter</a>
+                        {/if}
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>{project.title}</h3>
+                    <p>{project.description}</p>
+                    <div class="project-tags">
+                        {#each project.tags as tag}
+                            <span class="tag">{tag}</span>
+                        {/each}
+                    </div>
+                </div>
+            </div>
+        {/each}
     </div>
-
-    <!-- Ajoute d'autres projets ici -->
-</div>
-
+</section>
 
 <style>
-    /* Réinitialisation des marges et du padding */
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+    .projects-section {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 20px;
     }
 
-    /* Styles généraux */
-    body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        background-color: #f4f4f4;
+    .projects-header {
+        text-align: center;
+        margin-bottom: 80px;
     }
 
-    /* Conteneur des projets */
-    .portfolio {
+    .projects-header h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+        background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    .projects-header p {
+        font-size: 18px;
+        color: #94a3b8;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .projects-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive, chaque projet aura au minimum 300px */
-        gap: 20px; /* Espacement entre les projets */
-        padding: 20px;
+        grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+        gap: 30px;
+        margin-bottom: 60px;
     }
 
-    /* Style des projets */
-    .project {
-        background-color: #fff;
-        border-radius: 8px;
-        overflow: hidden; /* Pour éviter que l'image dépasse */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    .project-card {
+        background: rgba(30, 41, 59, 0.6);
+        border: 1px solid rgba(96, 165, 250, 0.2);
+        border-radius: 15px;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
     }
 
-    /* Image du projet */
-    .project>img {
-        width: 100%; /* L'image occupe toute la largeur de la page */
-        height: 12vw;/* L'image garde ses proportions */
+    .project-card:hover {
+        border-color: rgba(96, 165, 250, 0.5);
+        box-shadow: 0 20px 50px rgba(59, 130, 246, 0.15);
+        transform: translateY(-8px);
+    }
+
+    .project-image {
+        position: relative;
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1));
+    }
+
+    .project-image img {
+        width: 100%;
+        height: 100%;
         object-fit: cover;
-        display: block;
+        transition: transform 0.3s ease;
     }
 
-    /* Informations du projet */
-    .project-info {
-        padding: 15px;
+    .project-card:hover .project-image img {
+        transform: scale(1.05);
+    }
+
+    .project-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(15, 23, 42, 0.8);
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: center;
+        gap: 15px;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        backdrop-filter: blur(4px);
+    }
+
+    .project-card:hover .project-overlay {
+        opacity: 1;
+    }
+
+    .project-link {
+        display: inline-block;
+        padding: 10px 24px;
+        background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+        color: white;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 14px;
+        transition: all 0.3s ease;
+    }
+
+    .project-link:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(59, 130, 246, 0.4);
+    }
+
+    .project-content {
+        padding: 30px;
+        flex-grow: 1;
+        display: flex;
         flex-direction: column;
-
     }
 
-    .project-info h2 {
-        font-size: 1.5rem;
-        margin-bottom: 10px;
+    .project-content h3 {
+        font-size: 22px;
+        margin-bottom: 12px;
+        color: #60a5fa;
     }
 
-    .project-info p {
-        font-size: 1rem;
-        color: #666;
+    .project-content p {
+        color: #cbd5e1;
+        font-size: 14px;
+        line-height: 1.8;
+        margin-bottom: 20px;
+        flex-grow: 1;
     }
 
-    .project-info img {
-        height: 60px;
+    .project-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
 
+    .tag {
+        display: inline-block;
+        padding: 6px 14px;
+        background: rgba(96, 165, 250, 0.15);
+        color: #60a5fa;
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: 500;
+        border: 1px solid rgba(96, 165, 250, 0.3);
+        transition: all 0.3s ease;
+    }
+
+    .tag:hover {
+        background: rgba(96, 165, 250, 0.25);
+        border-color: rgba(96, 165, 250, 0.6);
+    }
+
+    @media (max-width: 768px) {
+        .projects-header h1 {
+            font-size: 36px;
+        }
+
+        .projects-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .project-overlay {
+            opacity: 1;
+        }
+
+        .project-link {
+            padding: 8px 20px;
+            font-size: 13px;
+        }
     }
 </style>
 
