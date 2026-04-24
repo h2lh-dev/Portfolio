@@ -34,7 +34,7 @@
             <div class="positioning-card">
                 <div class="card-number">01</div>
                 <h3>Profil</h3>
-                <p>Développeur Full Stack en formation BUT Informatique (2ème année). Expérience de 3 mois en tant que développeur chez AnankéInc au Canada en contexte Erasmus.</p>
+                <p>Développeur Full Stack en formation BUT Informatique (3ème année). Expérience de 3 mois en tant que développeur chez AnankéInc au Canada en contexte Erasmus.</p>
             </div>
             <div class="positioning-card">
                 <div class="card-number">02</div>
