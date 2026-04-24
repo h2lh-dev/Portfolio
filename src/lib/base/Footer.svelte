@@ -9,6 +9,7 @@
             <h4>Navigation</h4>
             <ul>
                 <li><a href="/">Accueil</a></li>
+                <li><a href="/Experience">Expérience</a></li>
                 <li><a href="/Projet">Projets</a></li>
                 <li><a href="/Parcours">Parcours</a></li>
                 <li><a href="/Competence">Compétences</a></li>

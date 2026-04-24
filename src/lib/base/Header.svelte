@@ -27,6 +27,7 @@
 
             <ul class="nav-menu" class:active={isOpen}>
                 <li><a href="/" on:click={closeMenu}>Accueil</a></li>
+                <li><a href="/Experience" on:click={closeMenu}>Expérience</a></li>
                 <li><a href="/Projet" on:click={closeMenu}>Projets</a></li>
                 <li><a href="/Parcours" on:click={closeMenu}>Parcours</a></li>
                 <li><a href="/Competence" on:click={closeMenu}>Compétences</a></li>

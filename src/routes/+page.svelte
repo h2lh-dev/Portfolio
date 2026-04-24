@@ -17,38 +17,67 @@
         <div class="hero-text">
             <h1 class="hero-title">Hugo Desmons</h1>
             <p class="hero-subtitle">Développeur Full Stack</p>
-            <p class="hero-description">Étudiant en BUT Informatique à l'IUT de Villeneuve d'Ascq, passionné par les technologies numériques et l'innovation</p>
+            <p class="hero-tagline">Passionné par la création d'expériences digitales | Backend & Frontend | Web & Mobile</p>
+            <p class="hero-description">Développeur Full Stack avec expérience professionnelle en contexte international. Spécialisé dans la création d'applications web modernes utilisant Laravel, React et technologies cloud. Doté de capacités d'adaptation rapide et d'autonomie dans la gestion de projets complets.</p>
             <div class="hero-cta">
-                <a href="/Projet" class="btn btn-primary">Voir mes projets</a>
-                <a href="./Projet/CVHugoDesmons.pdf" download class="btn btn-secondary">Télécharger CV</a>
+                <a href="/Experience" class="btn btn-primary">Mon expérience</a>
+                <a href="/Projet" class="btn btn-secondary">Voir mes projets</a>
             </div>
-        </div>
-        <div class="hero-visual" style="transform: translateY({scrollY * 0.5}px)">
-            <div class="gradient-box gradient-1"></div>
-            <div class="gradient-box gradient-2"></div>
-            <div class="gradient-box gradient-3"></div>
         </div>
     </div>
 </section>
 
-<section class="presentation">
-    <div class="presentation-container">
-        <h2>À propos de moi</h2>
-        <div class="presentation-grid">
-            <div class="presentation-card">
-                <div class="card-icon">📚</div>
-                <h3>Formation</h3>
-                <p>Actuellement en 2ème année de BUT Informatique à l'IUT de Villeneuve d'Ascq. Passionné par les technologies numériques et le développement logiciel.</p>
+<section class="positioning">
+    <div class="positioning-container">
+        <h2>Qui suis-je professionnellement ?</h2>
+        <div class="positioning-grid">
+            <div class="positioning-card">
+                <div class="card-number">01</div>
+                <h3>Profil</h3>
+                <p>Développeur Full Stack en formation BUT Informatique (2ème année). Expérience de 3 mois en tant que développeur chez AnankéInc au Canada en contexte Erasmus.</p>
             </div>
-            <div class="presentation-card">
-                <div class="card-icon">💡</div>
-                <h3>Vision</h3>
-                <p>Convaincu que les intelligences artificielles et les innovations constantes offrent des perspectives d'avenir passionnantes et stimulantes.</p>
+            <div class="positioning-card">
+                <div class="card-number">02</div>
+                <h3>Compétences clés</h3>
+                <p>PHP/Laravel, JavaScript/Tailwind, Gestion de base de données, Architecture logicielle, Méthodologies Agile, Travail en équipe distribuée.</p>
             </div>
-            <div class="presentation-card">
-                <div class="card-icon">🚀</div>
-                <h3>Objectifs</h3>
-                <p>Poursuivre ma formation en alternance et développer mes compétences dans le domaine du développement logiciel riche et diversifié.</p>
+            <div class="positioning-card">
+                <div class="card-number">03</div>
+                <h3>Points forts</h3>
+                <p>Autonomie, adaptabilité, apprentissage rapide, communication efficace, capacité à prendre l'initiative dans un environnement peu structuré.</p>
+            </div>
+            <div class="positioning-card">
+                <div class="card-number">04</div>
+                <h3>Projet</h3>
+                <p>Rejoindre une équipe en tant que développeur Full Stack ou spécialiser progressivement mes compétences (Backend ou DevOps).</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="highlights">
+    <div class="highlights-container">
+        <h2>Points forts</h2>
+        <div class="highlights-grid">
+            <div class="highlight-item">
+                <div class="highlight-icon">🚀</div>
+                <h3>Semi-autonomie</h3>
+                <p>Capable de gérer un projet complet de bout en bout avec respect des directives et livrables définis.</p>
+            </div>
+            <div class="highlight-item">
+                <div class="highlight-icon">🌍</div>
+                <h3>Adaptabilité</h3>
+                <p>Expérience en contexte international (stage Erasmus), capacité à s'adapter rapidement à un nouvel environnement professionnel.</p>
+            </div>
+            <div class="highlight-item">
+                <div class="highlight-icon">💡</div>
+                <h3>Apprentissage rapide</h3>
+                <p>Technologies maîtrisées en situation réelle dans un contexte professionnel sans formation préalable intensive.</p>
+            </div>
+            <div class="highlight-item">
+                <div class="highlight-icon">👥</div>
+                <h3>Collaboration</h3>
+                <p>Travail efficace dans une petite équipe (3 personnes) avec communication régulière et responsabilité partagée.</p>
             </div>
         </div>
     </div>
@@ -56,11 +85,11 @@
 
 <section class="cta-section">
     <div class="cta-content">
-        <h2>Prêt à collaborer ?</h2>
-        <p>Explorez mes projets et découvrez comment je peux contribuer à vos ambitions</p>
+        <h2>Découvrez mon parcours complet</h2>
+        <p>Explorez mon expérience professionnelle, mes compétences et mes projets significatifs</p>
         <div class="cta-buttons">
-            <a href="/Projet" class="btn btn-primary">Consulter les projets</a>
-            <a href="mailto:hugo.desmons@icloud.com" class="btn btn-secondary">Me contacter</a>
+            <a href="/Experience" class="btn btn-primary">Expérience & Compétences</a>
+            <a href="/Competence" class="btn btn-secondary">Soft Skills</a>
         </div>
     </div>
 </section>
@@ -77,9 +106,8 @@
         max-width: 1400px;
         margin: 0 auto;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 60px;
-        align-items: center;
     }
 
     .hero-text {
@@ -101,7 +129,16 @@
         font-size: 28px;
         font-weight: 300;
         color: #cbd5e1;
+        margin-bottom: 10px;
+    }
+
+    .hero-tagline {
+        font-size: 16px;
+        color: #60a5fa;
+        font-weight: 500;
         margin-bottom: 20px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
     }
 
     .hero-description {
@@ -109,7 +146,7 @@
         color: #94a3b8;
         margin-bottom: 40px;
         line-height: 1.8;
-        max-width: 500px;
+        max-width: 700px;
     }
 
     .hero-cta {
@@ -154,62 +191,17 @@
         color: #93c5fd;
     }
 
-    .hero-visual {
-        position: relative;
-        height: 300px;
-        display: none;
-    }
-
-    .gradient-box {
-        position: absolute;
-        border-radius: 20px;
-        filter: blur(40px);
-        opacity: 0.6;
-    }
-
-    .gradient-1 {
-        width: 200px;
-        height: 200px;
-        background: linear-gradient(135deg, #3b82f6, #8b5cf6);
-        top: 0;
-        right: 0;
-        animation: float 6s ease-in-out infinite;
-    }
-
-    .gradient-2 {
-        width: 150px;
-        height: 150px;
-        background: linear-gradient(135deg, #8b5cf6, #ec4899);
-        bottom: 50px;
-        left: 50px;
-        animation: float 8s ease-in-out infinite reverse;
-    }
-
-    .gradient-3 {
-        width: 180px;
-        height: 180px;
-        background: linear-gradient(135deg, #06b6d4, #3b82f6);
-        top: 150px;
-        left: 100px;
-        animation: float 7s ease-in-out infinite;
-    }
-
-    @keyframes float {
-        0%, 100% { transform: translateY(0px); }
-        50% { transform: translateY(20px); }
-    }
-
-    .presentation {
+    .positioning {
         margin: 100px 0;
     }
 
-    .presentation-container {
+    .positioning-container {
         max-width: 1400px;
         margin: 0 auto;
         padding: 0 20px;
     }
 
-    .presentation-container h2 {
+    .positioning-container h2 {
         font-size: 40px;
         text-align: center;
         margin-bottom: 60px;
@@ -219,41 +211,107 @@
         background-clip: text;
     }
 
-    .presentation-grid {
+    .positioning-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         gap: 30px;
     }
 
-    .presentation-card {
+    .positioning-card {
         background: rgba(30, 41, 59, 0.6);
         border: 1px solid rgba(96, 165, 250, 0.2);
         border-radius: 15px;
         padding: 40px 30px;
         transition: all 0.3s ease;
+        position: relative;
     }
 
-    .presentation-card:hover {
+    .positioning-card:hover {
         border-color: rgba(96, 165, 250, 0.5);
         box-shadow: 0 10px 40px rgba(59, 130, 246, 0.1);
         transform: translateY(-5px);
     }
 
-    .card-icon {
-        font-size: 40px;
-        margin-bottom: 20px;
+    .card-number {
+        font-size: 48px;
+        font-weight: 800;
+        color: rgba(96, 165, 250, 0.2);
+        position: absolute;
+        top: 20px;
+        right: 30px;
     }
 
-    .presentation-card h3 {
+    .positioning-card h3 {
         font-size: 22px;
         color: #60a5fa;
         margin-bottom: 15px;
+        margin-top: 0;
     }
 
-    .presentation-card p {
+    .positioning-card p {
         color: #94a3b8;
         line-height: 1.8;
         font-size: 15px;
+        margin: 0;
+    }
+
+    .highlights {
+        margin: 100px 0;
+    }
+
+    .highlights-container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .highlights-container h2 {
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 60px;
+        background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    .highlights-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+    }
+
+    .highlight-item {
+        background: rgba(30, 41, 59, 0.6);
+        border: 1px solid rgba(96, 165, 250, 0.2);
+        border-radius: 15px;
+        padding: 40px 30px;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    .highlight-item:hover {
+        border-color: rgba(96, 165, 250, 0.5);
+        box-shadow: 0 10px 40px rgba(59, 130, 246, 0.1);
+        transform: translateY(-5px);
+    }
+
+    .highlight-icon {
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+
+    .highlight-item h3 {
+        font-size: 20px;
+        color: #60a5fa;
+        margin-bottom: 12px;
+    }
+
+    .highlight-item p {
+        color: #94a3b8;
+        font-size: 15px;
+        line-height: 1.6;
+        margin: 0;
     }
 
     .cta-section {
@@ -288,10 +346,6 @@
     }
 
     @media (max-width: 768px) {
-        .hero-content {
-            grid-template-columns: 1fr;
-        }
-
         .hero-title {
             font-size: 42px;
         }
@@ -300,7 +354,11 @@
             font-size: 20px;
         }
 
-        .presentation-container h2 {
+        .positioning-container h2 {
+            font-size: 32px;
+        }
+
+        .highlights-container h2 {
             font-size: 32px;
         }
 
@@ -321,3 +379,4 @@
         }
     }
 </style>
+
