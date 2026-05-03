@@ -1,5 +1,23 @@
 <script>
     const projects = [
+         {
+            title: "Émulateur RISC-V ",
+            description: "Émulateur de processeur RISC-V complètement fonctionnel en Rust avec support complet de 41 instructions. Dispose d'un mode interactif avec débogage et commandes de visualisation mémoire.",
+            image: "./Projet/emulateur.png",
+            tags: ["Rust", "Architecture", "Émulation", "Système"],
+            link: "https://gitlab.univ-lille.fr/camille.okubo.etu/sae-s5.a.01emulateur",
+            skills: "Rust, Cargo, Architecture processeur, Mémoire, Compilation",
+            context: "1376 lignes de code Rust - 41 opcodes RV32I implémentés - Mode interactif avec déboguer - 7 modules bien structurés"
+        },
+        {
+            title: "Site gestion de Rendez-vous",
+            description: "Application web de gestion de rendez-vous avec système de réservation, gestion des rôles (utilisateur/admin) et paramétrage du planning avancé (jours ouvrés, horaires, créneaux, capacités).",
+            image: "./Projet/s5a01.png",
+            tags: ["Java", "Spring Boot", "Maven", "Web", "Backend"],
+            link: "https://gitlab.univ-lille.fr/camille.okubo.etu/s5a01mathieu",
+            skills: "Java 17, Spring Boot, Maven, Gestion utilisateurs, Architecture backend",
+            context: "Application complète avec authentification, gestion des rôles, réservations et paramétrage dynamique"
+        },
         {
             title: "ChatMoiFort",
             description: "Application de messagerie en ligne développée avec TomCat. Plateforme complète de communication en temps réel avec gestion des utilisateurs.",
@@ -69,24 +87,6 @@
             image: "./Projet/virtualbox-main.png",
             tags: ["Linux", "VirtualBox", "Debian"],
             skills: "Linux, VirtualBox, Debian"
-        },
-        {
-            title: "Émulateur RISC-V RV32I",
-            description: "Émulateur de processeur RISC-V complètement fonctionnel en Rust avec support complet de 41 instructions. Dispose d'un mode interactif avec débogage et commandes de visualisation mémoire.",
-            image: "./Projet/emulateur.png",
-            tags: ["Rust", "Architecture", "Émulation", "Système"],
-            link: "https://gitlab.univ-lille.fr/camille.okubo.etu/sae-s5.a.01emulateur",
-            skills: "Rust, Cargo, Architecture processeur, Mémoire, Compilation",
-            context: "1376 lignes de code Rust - 41 opcodes RV32I implémentés - Mode interactif avec déboguer - 7 modules bien structurés"
-        },
-        {
-            title: "S5A01 - Gestion de Rendez-vous",
-            description: "Application web de gestion de rendez-vous avec système de réservation, gestion des rôles (utilisateur/admin) et paramétrage du planning avancé (jours ouvrés, horaires, créneaux, capacités).",
-            image: "./Projet/s5a01.png",
-            tags: ["Java", "Spring Boot", "Maven", "Web", "Backend"],
-            link: "https://gitlab.univ-lille.fr/camille.okubo.etu/s5a01mathieu",
-            skills: "Java 17, Spring Boot, Maven, Gestion utilisateurs, Architecture backend",
-            context: "Application complète avec authentification, gestion des rôles, réservations et paramétrage dynamique"
         }
     ];
 </script>
