@@ -1,4 +1,36 @@
 <script>
+    const competences = [
+        {
+            category: "Frontend",
+            skills: [
+                { name: "HTML", icon: "html", level: 90 },
+                { name: "CSS", icon: "css", level: 85 },
+                { name: "JavaScript", icon: "javascript", level: 85 },
+                { name: "Tailwind CSS", icon: "tailwind", level: 80 },
+                { name: "Svelte", icon: "svelte", level: 75 }
+            ]
+        },
+        {
+            category: "Backend",
+            skills: [
+                { name: "PHP/Laravel", icon: "php", level: 85 },
+                { name: "PostgreSQL", icon: "postgresql", level: 80 },
+                { name: "API REST", icon: "api", level: 80 },
+                { name: "Java", icon: "java", level: 75 },
+                { name: "Linux", icon: "linux", level: 75 }
+            ]
+        },
+        {
+            category: "DevOps & Outils",
+            skills: [
+                { name: "Git", icon: "git", level: 85 },
+                { name: "Figma", icon: "figma", level: 75 },
+                { name: "Agile/Scrum", icon: "agile", level: 75 },
+                { name: "JetBrains Tools", icon: "idea", level: 80 }
+            ]
+        }
+    ];
+
     const softSkillsAnalysis = [
         {
             category: "Manière d'être",
@@ -19,7 +51,7 @@
                     name: "Engagement et sens des responsabilités",
                     description: "Implication personnelle dans la qualité du travail livré",
                     professional: "Prise en charge complète de la qualité du code et de la fonctionnalité, avec attention aux détails utilisateur",
-                    reflection: "Je m'engage vraiment quand je comprends l'impact de mon travail. Voir le projet utilisé et appécié me motive fortement."
+                    reflection: "Je m'engage vraiment quand je comprends l'impact de mon travail. Voir le projet utilisé et apprécié me motive fortement."
                 },
                 {
                     name: "Gestion du stress et des émotions",
@@ -94,58 +126,27 @@
             ]
         }
     ];
-
-    const hardSkills = [
-        {
-            category: "Frontend",
-            skills: [
-                { name: "HTML", icon: "html", level: 90 },
-                { name: "CSS", icon: "css", level: 85 },
-                { name: "JavaScript", icon: "javascript", level: 85 },
-                { name: "Tailwind CSS", icon: "tailwind", level: 80 },
-                { name: "Svelte", icon: "svelte", level: 75 }
-            ]
-        },
-        {
-            category: "Backend",
-            skills: [
-                { name: "PHP/Laravel", icon: "php", level: 85 },
-                { name: "PostgreSQL", icon: "postgresql", level: 80 },
-                { name: "API REST", icon: "api", level: 80 },
-                { name: "Java", icon: "java", level: 75 },
-                { name: "Linux", icon: "linux", level: 75 }
-            ]
-        },
-        {
-            category: "DevOps & Outils",
-            skills: [
-                { name: "Git", icon: "git", level: 85 },
-                { name: "Figma", icon: "figma", level: 75 },
-                { name: "Agile/Scrum", icon: "agile", level: 75 },
-                { name: "JetBrains Tools", icon: "idea", level: 80 }
-            ]
-        }
-    ];
 </script>
 
-<section class="skills-section">
-    <div class="skills-header">
-        <h1>Compétences & Développement</h1>
-        <p>Hard skills acquises et soft skills développées en contexte professionnel</p>
+<section class="competences-section">
+    <div class="competences-header">
+        <h1>Mes Compétences</h1>
+        <p>Hard skills techniques et soft skills développées en contexte professionnel</p>
     </div>
 
-    <div class="skills-container">
-        <div class="hard-skills-block">
+    <div class="competences-container">
+        <!-- Hard Skills Section -->
+        <div class="hard-skills-section">
             <h2>Compétences Techniques (Hard Skills)</h2>
-            <p class="block-intro">Langages, frameworks et outils maîtrisés grâce à mon expérience chez AnankéInc et ma formation</p>
+            <p class="section-intro">Langages, frameworks et outils maîtrisés grâce à mon expérience chez AnankéInc et ma formation</p>
 
-            <div class="hard-skills-grid">
-                {#each hardSkills as category (category.category)}
+            <div class="skills-grid">
+                {#each competences as category (category.category)}
                     <div class="skills-category">
                         <h3>{category.category}</h3>
                         <div class="skills-list">
                             {#each category.skills as skill}
-                                <div class="skill-item">
+                                <div class="skill-card">
                                     <div class="skill-header">
                                         <span class="skill-name">{skill.name}</span>
                                         <span class="skill-level">{skill.level}%</span>
@@ -161,9 +162,10 @@
             </div>
         </div>
 
-        <div class="soft-skills-block">
+        <!-- Soft Skills Section -->
+        <div class="soft-skills-section">
             <h2>Compétences Comportementales (Soft Skills)</h2>
-            <p class="block-intro">Analyse réflexive de mes compétences humaines développées en situation professionnelle réelle</p>
+            <p class="section-intro">Analyse réflexive de mes compétences humaines développées en situation professionnelle réelle</p>
 
             <div class="soft-skills-container">
                 {#each softSkillsAnalysis as category (category.category)}
@@ -199,18 +201,18 @@
 </section>
 
 <style>
-    .skills-section {
+    .competences-section {
         max-width: 1400px;
         margin: 0 auto;
         padding: 0 20px;
     }
 
-    .skills-header {
+    .competences-header {
         text-align: center;
         margin-bottom: 80px;
     }
 
-    .skills-header h1 {
+    .competences-header h1 {
         font-size: 48px;
         margin-bottom: 20px;
         background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 100%);
@@ -219,41 +221,41 @@
         background-clip: text;
     }
 
-    .skills-header p {
+    .competences-header p {
         font-size: 18px;
         color: #94a3b8;
     }
 
-    .skills-container {
+    .competences-container {
         display: flex;
         flex-direction: column;
         gap: 100px;
     }
 
-    .hard-skills-block,
-    .soft-skills-block {
+    .hard-skills-section,
+    .soft-skills-section {
         padding: 60px 40px;
         background: rgba(30, 41, 59, 0.4);
         border: 1px solid rgba(96, 165, 250, 0.2);
         border-radius: 20px;
     }
 
-    .hard-skills-block h2,
-    .soft-skills-block h2 {
+    .hard-skills-section h2,
+    .soft-skills-section h2 {
         font-size: 32px;
         color: #60a5fa;
         margin: 0 0 15px 0;
     }
 
-    .block-intro {
+    .section-intro {
         color: #94a3b8;
         font-size: 15px;
         margin: 0 0 40px 0;
     }
 
-    .hard-skills-grid {
+    .skills-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         gap: 30px;
     }
 
@@ -262,6 +264,13 @@
         border: 1px solid rgba(96, 165, 250, 0.2);
         border-radius: 15px;
         padding: 30px;
+        transition: all 0.3s ease;
+    }
+
+    .skills-category:hover {
+        border-color: rgba(96, 165, 250, 0.5);
+        box-shadow: 0 10px 30px rgba(59, 130, 246, 0.1);
+        transform: translateY(-3px);
     }
 
     .skills-category h3 {
@@ -276,7 +285,7 @@
         gap: 20px;
     }
 
-    .skill-item {
+    .skill-card {
         display: flex;
         flex-direction: column;
         gap: 8px;
@@ -291,6 +300,7 @@
     .skill-name {
         color: #e2e8f0;
         font-weight: 500;
+        font-size: 14px;
     }
 
     .skill-level {
@@ -402,11 +412,16 @@
     }
 
     @media (max-width: 768px) {
-        .skills-header h1 {
+        .competences-header h1 {
             font-size: 36px;
         }
 
-        .hard-skills-grid {
+        .hard-skills-section h2,
+        .soft-skills-section h2 {
+            font-size: 26px;
+        }
+
+        .skills-grid {
             grid-template-columns: 1fr;
         }
 
@@ -414,8 +429,8 @@
             grid-template-columns: 1fr;
         }
 
-        .hard-skills-block,
-        .soft-skills-block {
+        .hard-skills-section,
+        .soft-skills-section {
             padding: 30px 20px;
         }
 
